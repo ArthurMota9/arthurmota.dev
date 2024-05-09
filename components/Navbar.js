@@ -9,11 +9,11 @@ export default function Navbar() {
   const router = useRouter()
   const pages = [
     'About',
-    'Articles',
+    // 'Articles',
     'Projects',
-    'Talks',
-    'Podcasts',
-    'Investing',
+    // 'Talks',
+    // 'Podcasts',
+    // 'Investing',
     'Uses',
     'Reminder',
   ]
@@ -24,7 +24,9 @@ export default function Navbar() {
     <AnimateSharedLayout>
       <Header>
         <Link href="/" passHref>
-          <ButtonLogo as="a">z</ButtonLogo>
+          <ButtonLogo as="a">
+            <Icon className="ri-home-line" />
+          </ButtonLogo>
         </Link>
 
         <Nav>

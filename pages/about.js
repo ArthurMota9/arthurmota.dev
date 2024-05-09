@@ -18,7 +18,7 @@ export async function getStaticProps() {
     title: 'About // Zeno Rocha',
     description:
       "Zeno Rocha is a Brazilian creator and programmer. He currently lives in San Francisco, California, where he's the Founder & CEO at Resend. His lifelong appreciation for building software and sharing knowledge led him to speak in over 110 conferences worldwide. His passion for open source put him on the top 20 most active users on GitHub at age 22. Before moving to the US, Zeno developed multiple applications, mentored startups, and worked at major companies in Latin America, such as Globo and Petrobras.",
-    tagline: 'Create. Share. Repeat.',
+    tagline: 'About me.',
     image: '/static/images/about-bw.jpg',
     primaryColor: 'pink',
     secondaryColor: 'purple',
@@ -41,7 +41,7 @@ function About(props) {
         <Section>
           <Image
             alt="Zeno"
-            src="/static/images/zeno-bw.jpg"
+            src="/static/images/perfil.jpg"
             width="336"
             height="336"
             placeholder="blur"
@@ -56,21 +56,14 @@ function About(props) {
               '@bp2': { marginTop: '-6px' },
             }}
           >
-            <strong>Hey, I'm Zeno Rocha</strong>
-            <Pronunciation />
-            I started as a software engineer back in 2009, working with Flash.
+            <strong>Hi, I'm Arthur Mota. </strong>
+             I started as a frontend developer in 2016, working with JavaScript. I hold a <strong>Bachelor's degree in Information Systems Science from UFSC.</strong>
           </Paragraph>
           <Paragraph>
-            I'm the <strong>Founder & CEO</strong> at
-            Resend. Before that, I was a VP of Developer Experience at WorkOS and CPO at Liferay Cloud. I'm originally
-            from Brazil and now living in{' '}
-            <strong>San Francisco, California</strong> with my amazing wife and
-            beautiful daughter.
+            I'm a <strong>Frontend Engineer at Mercado Livre.</strong> I live in Florianópolis, Brazil with my wife and cat.
           </Paragraph>
           <Paragraph>
-            <strong>I love dark mode</strong>, open source, and side projects.
-            When I'm not working, I like running, watching movies, and{' '}
-            <strong>eating cheese</strong>.
+            I'm passionate about <strong>sports, technology, and web development.</strong> I find it amazing how we can use technology and development to help and transform people's lives.
           </Paragraph>
         </Section>
       </Container>
@@ -194,8 +187,8 @@ function About(props) {
 
       {renderIntro()}
 
-      <h2>Bio</h2>
-      {renderBio()}
+      {/* <h2>Bio</h2>
+      {renderBio()} */}
 
       <h2>Career</h2>
       {renderAll()}
